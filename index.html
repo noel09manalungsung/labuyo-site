@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Labuyo</title>
+<meta name="description" content="Labuyo makes small tools for sales and marketing work. Its first app is SpiceStack, a browser extension that exports the leads your Apollo search shows.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+  :root { --red: #D0262D; --red-dark: #A91D23; --tint: #FDECEC; --ink: #17171A;
+    --muted: #55555C; --ground: #F6F6F7; --line: #ECECEF; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+    color: var(--ink); background: var(--ground); line-height: 1.55; }
+  a { color: var(--red-dark); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+  header { padding: 28px 0; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 22px;
+    letter-spacing: -0.3px; color: var(--ink); text-decoration: none; }
+  .hero { padding: 40px 0 32px; }
+  .hero h1 { font-size: 40px; line-height: 1.15; letter-spacing: -0.8px; margin: 0 0 12px; }
+  .hero p { font-size: 18px; color: var(--muted); margin: 0; max-width: 620px; }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 28px;
+    margin: 24px 0 48px; }
+  .app-head { display: flex; align-items: center; gap: 14px; margin-bottom: 12px; }
+  .app-head h2 { margin: 0; font-size: 24px; }
+  .app-head span { color: var(--muted); font-size: 14px; }
+  ul { padding-left: 20px; margin: 12px 0 20px; }
+  li { margin: 4px 0; }
+  .plans { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;
+    margin: 20px 0 24px; }
+  .plan { border: 1px solid var(--line); border-radius: 12px; padding: 18px; }
+  .plan h3 { margin: 0 0 4px; font-size: 16px; }
+  .plan .price { font-size: 22px; font-weight: 800; }
+  .plan p { margin: 6px 0 0; color: var(--muted); font-size: 14px; }
+  .button { display: inline-block; background: var(--red); color: #fff; text-decoration: none;
+    font-weight: 600; padding: 12px 20px; border-radius: 10px; }
+  .button:hover { background: var(--red-dark); }
+  .note { color: var(--muted); font-size: 14px; margin-top: 12px; }
+  footer { border-top: 1px solid var(--line); padding: 24px 0 40px; color: var(--muted);
+    font-size: 14px; }
+</style>
+</head>
+<body>
+<header class="wrap">
+  <a class="brand" href="/">
+    <svg width="36" height="36" viewBox="0 0 64 64" aria-hidden="true"><path d="M24.5 44C23.5 32 27 19 36.5 7.5c3 9.5 4.5 22.5 3 35.5-.5 4.5-4 7-7.5 7s-7-2-7.5-6z" fill="#D0262D"/><path d="M22 47c2-2.5 4.5-2.5 6-.5 1.5-2.5 6.5-2.5 8 0 1.5-2 4-2 6 .5-1.5 5.5-18.5 5.5-20 0z" fill="#2F8A3E"/><path d="M32 51.5c.4 3.5-1 7-4.5 9.5" fill="none" stroke="#2F8A3E" stroke-width="3" stroke-linecap="round"/></svg>
+    Labuyo
+  </a>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <h1>Small tools for sales and marketing work.</h1>
+    <p>Labuyo is named after siling labuyo, the small, hot chili of the Philippines.
+      Each Labuyo app does one job.</p>
+  </section>
+
+  <section class="card" id="spicestack">
+    <div class="app-head">
+      <svg width="48" height="48" viewBox="0 0 28 28" aria-hidden="true"><rect width="28" height="28" rx="7" fill="#D0262D"/><path d="M14 8l8 4-8 4-8-4z" fill="#fff" stroke="#fff" stroke-linejoin="round"/><path d="M6.8 15.6L14 19.2l7.2-3.6M6.8 19.6L14 23.2l7.2-3.6" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 8.2c-.2-1.9.7-3.3 2.6-4" fill="none" stroke="#3FAE52" stroke-width="2" stroke-linecap="round"/></svg>
+      <div>
+        <h2>SpiceStack</h2>
+        <span>Browser extension for Chrome and Edge</span>
+      </div>
+    </div>
+    <p>SpiceStack exports the leads your own Apollo people search shows you, to CSV or Excel.
+      Large searches are split into batches automatically, and signed-in users can download
+      every export again from the dashboard.</p>
+    <ul>
+      <li>Export from the Apollo tab you are on, or run large exports in batches</li>
+      <li>Files named by date, Apollo filter name and batch</li>
+      <li>Stop an export at any time and download what was collected</li>
+      <li>Delete an export, or your whole account, from the dashboard</li>
+    </ul>
+    <div class="plans">
+      <div class="plan">
+        <h3>Free</h3>
+        <div class="price">$0</div>
+        <p>100 leads a day, with or without an account.</p>
+      </div>
+      <div class="plan">
+        <h3>Pro</h3>
+        <div class="price">$19 / month</div>
+        <p>No daily limit. Or $190 a year.</p>
+      </div>
+    </div>
+    <a class="button" href="https://spicestack.labuyo.app/">Open the SpiceStack dashboard</a>
+    <p class="note">SpiceStack is not made by or connected to Apollo.io. It is not yet in the
+      Chrome Web Store.</p>
+  </section>
+</main>
+
+<footer class="wrap">
+  Labuyo · <a href="mailto:support@labuyo.app">support@labuyo.app</a>
+</footer>
+</body>
+</html>
